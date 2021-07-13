@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Family Map</string>
+
+    <!--Login and Registration Page-->
+    <string name="serverHost">Server Host: </string>
+    <string name="serverPort">Server Port: </string>
+    <string name="userName">User Name: </string>
+    <string name="password">Password: </string>
+    <string name="firstName">First Name: </string>
+    <string name="lastName">Last Name: </string>
+    <string name="email">Email: </string>
+    <string name="gender">Gender: </string>
+    <string name="male">M</string>
+    <string name="female">F</string>
+    <string name="login_button">SIGN IN</string>
+    <string name="register_button">REGISTER</string>
+    <string name="login_missing_params">Please fill in all required fields</string>
+
+    <!--API KEY for Google Maps-->
+    <string name="google_maps_key">AIzaSyCvCDR1B_iRn_9WCaV5NwOXl5Ha6iOtbf0</string>
+    <string name="title_activity_maps">Map</string>
+    
+    <!--Settings Activity-->
+    <string name="logout">Logout</string>
+    <string name="loginDesc">RETURN TO LOGIN SCREEN</string>
+    <string name="resync">Re-Sync Data</string>
+    <string name="resyncDesc">FROM FAMILY MAP SERVICE</string>
+    <string name="maptype">Map Type</string>
+    <string name="maptypeDesc">BACKGROUND DISPLAY ON MAP</string>
+    <string name="spouseLine">Spouse Lines</string>
+    <string name="spouseLineDesc">SHOW SPOUSE LINES</string>
+    <string name="familyTreeLine">Family Tree Lines</string>
+    <string name="familyTreeLineDesc">SHOW TREE LINES</string>
+    <string name="lifeStoryLine">Life Story Lines</string>
+    <string name="lifeStoryLinesDesc">SHOW LIFE STORY LINES</string>
+
+    <string-array name="map_menu">
+        <item>Normal</item>
+        <item>Hybrid</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+    </string-array>
+
+</resources>

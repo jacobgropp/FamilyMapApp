@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.PersonActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/person_activity_first_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_activity_first_name_descriptor"
+        android:layout_margin="10dp"
+        android:text="FIRST NAME"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/person_activity_first_name" />
+
+    <View
+        android:layout_width="135dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/person_activity_first_name_descriptor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_activity_last_name"
+            android:padding="4dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/person_activity_first_name_descriptor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_activity_last_name_descriptor"
+        android:layout_margin="10dp"
+        android:text="LAST NAME"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/person_activity_last_name"/>
+
+    <View
+        android:layout_width="135dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/person_activity_last_name_descriptor"
+        android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_activity_gender"
+            android:padding="4dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/person_activity_last_name_descriptor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_activity_gender_descriptor"
+        android:layout_margin="10dp"
+        android:text="GENDER"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/person_activity_gender"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/person_activity_gender_descriptor"
+        android:id="@+id/view" />
+
+    <ImageView
+        android:id="@+id/person_activity_gender_icon"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/person_activity_first_name"
+        android:layout_toRightOf="@+id/person_activity_last_name_descriptor"
+        android:adjustViewBounds="true"
+        android:padding="24dp"
+        android:src="@drawable/family" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:layout_below="@+id/person_activity_gender_descriptor"/>
+
+</RelativeLayout>

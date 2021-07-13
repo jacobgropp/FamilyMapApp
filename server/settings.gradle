@@ -1,0 +1,1 @@
+include ':app', ':Server', ':junit-4.12'

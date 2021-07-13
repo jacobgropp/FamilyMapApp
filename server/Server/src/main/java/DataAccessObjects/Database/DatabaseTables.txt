@@ -1,0 +1,32 @@
+create table users (
+	personID varchar(255) not null
+	username varchar(255) not null
+	password varchar(255) not null
+	email varchar(255) not null
+}
+
+create table person (
+	personID varchar(255) not null
+	descendent varchar(255) not null in_users
+	firstName varchar(255) not null first name of person
+	lastName varchar(255) not null last name of person
+	gender varchar(1) not null gender of person
+)
+
+create table event (
+	eventID varchar(255) not null
+	descendent varchar(255) not null in_users
+	personID varchar(255) not null in_person
+	latitude text 
+	longitude text
+	country varchar(255)
+	city varchar(255)
+	eventType varchar(255) not null
+	year varchar(255) not null	
+)
+
+create table authorizationTokens (
+	personID varchar(255) not null in_users
+	username varchar(255) not null in_users
+	tokenKey varchar(255) not null	
+)
